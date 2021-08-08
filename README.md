@@ -1,7 +1,8 @@
 
-Asteroids Radar
+***Asteroids Radar***
 
-The purpose
+***The purpose***
+
 My second project for the Udacity Kotlin Android Developer Nanodegree.
 The purpose of this project is to test my ability to fetch data from the web ,store it locally
 and display it in the UI,regardless if internet connectivity is available.
@@ -9,7 +10,7 @@ and display it in the UI,regardless if internet connectivity is available.
 Libraries used include : ViewModel,RecyclerView,Retrofit,Moshi,Picasso,Room,WorkManager,
 Shimmer and Timber.
 
-App functionality overview
+***App functionality overview***
 
 The Asteroids Radar fetches near - Earth asteroid data from the NASA's NeoWs API.
 It also features NASA's image of the day ,which is fed from the NASA's APOD API.
@@ -34,16 +35,18 @@ to minimize local storage usage.
 
 Clone the repo :
 
-git clone https://github.com/GerganaT/AsteroidRadar.git
+`git clone https://github.com/GerganaT/AsteroidRadar.git`
 
 IMPORTANT!!! - To test the app:
+
 1.Obtain an API - key from here:
-https://api.nasa.gov/
-2. Insert the key in the utils/Constants.kt against API_KEY
+  https://api.nasa.gov/  
+
+2.Insert the key in the `utils/Constants.kt` against `API_KEY`
 
 
 
-LICENSES AND ATTRIBUTIONS:
+***LICENSES AND ATTRIBUTIONS:***
 
 /* Copyright 2021,  Gergana Kirilova
 
