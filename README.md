@@ -1,5 +1,5 @@
 
-***Asteroids Radar***
+***Asteroid Radar***
 
 ***The purpose***
 
