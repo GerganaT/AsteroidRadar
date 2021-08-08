@@ -120,5 +120,16 @@ https://www.freeiconspng.com/images/no-image-icon
 
 ***SCREENSHOTS***
 
+ 
+
+
+
+<img src="https://user-images.githubusercontent.com/51824954/128642930-9630c5d3-b2ae-406e-bd9b-d01e5ee38f6f.png" width="45%"></img><img src="https://user-images.githubusercontent.com/51824954/128642935-039f0e2f-e901-4e57-92a5-f7260420612f.png" width="45%"></img>
+
+<img src="https://user-images.githubusercontent.com/51824954/128642934-dd4d8741-4334-4145-85d5-34fa59bc49c5.png" width="45%"></img><img src="https://user-images.githubusercontent.com/51824954/128642932-66caf7a9-6210-4c5d-8b8a-6cb4346da8b4.png" width="45%"></img>
+
+<img src="https://user-images.githubusercontent.com/51824954/128642928-235f0ced-5921-4a08-8bde-6b0042cbcf84.png" width="45%"></img><img src="https://user-images.githubusercontent.com/51824954/128642929-bbd4ead8-317d-4aeb-93f0-f75e06caf891.png" width="45%"></img>
+
+<img src="https://user-images.githubusercontent.com/51824954/128642926-6997b793-9bdc-4f3c-96cc-4757d55d1498.png" width="45%"></img><img src="https://user-images.githubusercontent.com/51824954/128642927-f6d4d2fc-c1a0-41dd-9cf8-0087d673791e.png" width="45%"></img> 
 
 
