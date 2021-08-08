@@ -30,6 +30,12 @@ The project features worker functionality ,which refreshes the data once per day
 The worker also deletes data,older than today,in order to keep the database as compact as possible
 to minimize local storage usage.
 
+***USAGE***
+
+Clone the repo :
+
+git clone https://github.com/GerganaT/AsteroidRadar.git
+
 IMPORTANT!!! - To test the app:
 1.Obtain an API - key from here:
 https://api.nasa.gov/
