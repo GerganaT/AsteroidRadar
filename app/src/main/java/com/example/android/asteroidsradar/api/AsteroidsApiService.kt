@@ -28,6 +28,16 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 import java.lang.reflect.Type
 
+private val moshi = Moshi.Builder()
+    .add(KotlinJsonAdapterFactory())
+    .build()
+
+
+private val retrofit = Retrofit.Builder()
+    .addConverterFactory(MoshiOrScalarsConverterFactory())
+    .baseUrl(BASE_URL)
+    .build()
+
 /** Idea for multiple converters taken from this article:
 https://medium.com/mindorks/retrofit-with-multiple-converters-71ecd4042681 */
 
@@ -39,17 +49,6 @@ internal annotation class MoshiConverter
 @Target(AnnotationTarget.FUNCTION)
 @Retention(AnnotationRetention.RUNTIME)
 internal annotation class ScalarsConverter
-
-
-private val moshi = Moshi.Builder()
-    .add(KotlinJsonAdapterFactory())
-    .build()
-
-
-private val retrofit = Retrofit.Builder()
-    .addConverterFactory(MoshiOrScalarsConverterFactory())
-    .baseUrl(BASE_URL)
-    .build()
 
 
 interface AsteroidsAPIService {
@@ -68,13 +67,6 @@ interface AsteroidsAPIService {
     suspend fun getImageOfTheDay(
         @Query("api_key") apiKey: String
     ): ImageOfTheDay
-}
-
-
-object AsteroidApiService {
-    val asteroidsApiService: AsteroidsAPIService by lazy {
-        retrofit.create(AsteroidsAPIService::class.java)
-    }
 }
 
 class MoshiOrScalarsConverterFactory : Converter.Factory() {
@@ -96,5 +88,11 @@ class MoshiOrScalarsConverterFactory : Converter.Factory() {
             }
         }
         return super.responseBodyConverter(type, annotations, retrofit)
+    }
+}
+
+object AsteroidApiService {
+    val asteroidsApiService: AsteroidsAPIService by lazy {
+        retrofit.create(AsteroidsAPIService::class.java)
     }
 }
