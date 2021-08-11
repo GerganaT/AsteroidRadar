@@ -48,7 +48,7 @@ class MainFragment : Fragment() {
 
 
 
-        binding.lifecycleOwner = this
+        binding.lifecycleOwner = viewLifecycleOwner
 
         binding.viewModel = viewModel
 
@@ -64,7 +64,7 @@ class MainFragment : Fragment() {
 
         val clickListener = AsteroidClickListener {
             val navDirections = MainFragmentDirections.actionShowDetail(it)
-            this.findNavController().navigate(navDirections)
+            findNavController().navigate(navDirections)
         }
         val adapter = AsteroidAdapter(clickListener)
         binding.asteroidRecycler.adapter = adapter

@@ -29,8 +29,8 @@ import org.json.JSONObject
 import timber.log.Timber
 
 
-//Class,containing methods , which abstract away  the interaction between
-// the database and the Network API from the viewModel and the UI
+/**Class,containing methods , which abstract away  the interaction between
+ the database and the Network API from the viewModel and the UI*/
 class AsteroidRepository(private val asteroidsDatabase: AsteroidsDatabase) {
 
     /** Attempt to fetch data from the web-server and insert it in the database.*/
